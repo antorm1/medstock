@@ -1,0 +1,16 @@
+services:
+  medstock:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      DB_PATH: /data/medstock.db
+      PORT: "8000"
+    volumes:
+      - medstock-data:/data
+    restart: unless-stopped
+
+volumes:
+  medstock-data:

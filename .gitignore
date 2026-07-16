@@ -1,0 +1,25 @@
+# Dependencies
+node_modules
+frontend/node_modules
+
+# Build output
+dist
+frontend/dist
+
+# Python
+__pycache__
+*.pyc
+backend/__pycache__
+*.egg-info
+
+# Database
+*.db
+medstock.db
+
+# Env
+.env
+
+# Editor / OS
+.DS_Store
+.vscode
+.idea
